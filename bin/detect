@@ -5,5 +5,6 @@ if [ -f $1/mamute ]; then
   echo "Mamute"
   exit 0
 else
+	echo "Mamute not found"
   exit 1
 fi
