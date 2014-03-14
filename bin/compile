@@ -13,4 +13,4 @@ fi
 
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
 
-source ./install_jdk
+source ${BIN_DIR}/install_jdk
