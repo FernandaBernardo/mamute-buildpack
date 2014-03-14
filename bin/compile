@@ -11,5 +11,12 @@ if [ ! -s $1/mamute ]; then
   exit 1
 fi
 
+set -e
+
+# Parse args
+BUILD_DIR=$1
+CACHE_DIR=$2
+
 BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
+
 source $BIN_DIR/install_jdk
