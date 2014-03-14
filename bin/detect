@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # this pack is valid for apps with a hello.txt in the root
-if [ -f $1/mamute ]; then
+if [ -d $1/mamute ]; then
   echo "Mamute"
   exit 0
 else
-	echo "Mamute not found"
+  echo "Mamute not found"
   exit 1
 fi
