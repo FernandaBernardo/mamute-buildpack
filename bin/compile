@@ -6,11 +6,7 @@ indent() {
 
 echo "-----> Found mamute"
 
-# if hello.txt is empty, abort the build
 if [ ! -s $1/mamute ]; then
   echo "mamute was empty" | indent
   exit 1
 fi
-
-BIN_DIR=$(cd $(dirname $0); pwd) # absolute path
-source $BIN_DIR/install_jdk
