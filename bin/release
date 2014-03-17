@@ -2,6 +2,8 @@
 
 cat << EOF
 ---
+addons:
+  - cleardb:ignite
 default_process_types:
   web: /app/mamute/run.sh
 EOF
