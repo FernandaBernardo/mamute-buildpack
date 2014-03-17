@@ -3,5 +3,5 @@
 cat << EOF
 ---
 default_process_types:
-  web: mamute/run.sh
+  web: /app/mamute/run.sh
 EOF
